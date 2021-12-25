@@ -1,0 +1,637 @@
+/*تعديل رابط الصورة
+تعديل firstPart html
+في اكتر من firstPart//تعديل padding-left:26
+تعديل margin-right start button html
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Be Vietnam';
+    overflow-x: hidden;
+    color: #242d52;
+    /*color: #242d52;*/
+}
+               
+#firstBackground{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: -400;
+    right: -100px;
+    z-index: -6;
+}
+
+#navBar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top:40px;
+    margin-left: 40px;  
+}
+
+#navbarD{
+    width: 100%;
+    padding: 0 7.5% 0 0;
+    position: sticky; 
+    top: 0;
+    z-index: 100;
+}
+
+#menu{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 40%;
+}
+
+#menu a{
+color: #242d52;
+text-decoration: none;
+}
+
+#menu a:hover{
+    text-decoration-color: #ee6339;
+    text-decoration-line: underline;      
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85%;                           
+    margin: 0 auto;
+}
+                               
+#firstPart{
+font-size:30px;
+margin-top: 40px;
+padding-left: 26px;
+width: 40%;
+}
+
+h1{
+    line-height: 70px;
+    font-family: 'Be Vietnam';
+}
+
+#firstPart p{
+    font-size:18px;
+    font-family: 'Be Vietnam';
+    color: #9197ac;
+}
+
+#secPart{
+    /*تعديل padding 100-> 120 &width:38*/
+
+    padding-top: 120px;
+    width:38%;
+   /* padding-right: 80px;*/
+}
+
+p{
+    font-size: large;
+    font-family: 'Be Vietnam';
+    color: #9197ac;
+}
+
+#firstPart2{
+    width: 40%;
+    position: relative;
+    /* margin : 0 auto;*/
+}
+
+#firstPart2Title{    
+    color: #242d52; 
+    margin: 25px 0;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+#difference{
+    width: 80%;
+    margin-top: 10px;
+    color: #9197ac;
+    font-size: 18px;
+}
+
+#secPart2{
+    width:40%;
+}
+
+.description h3{
+    margin: 0 25px;
+    color: #242d52;
+}
+
+.description{
+    margin: 25px 0;
+}
+
+.description p{
+    margin: 0 25px;
+    width:75%;
+    color: #9197ac;
+}
+
+.description::before{
+    background-color: #ee6339;
+    content: '01';
+    position: relative;
+    left: 0;
+    border-radius: 2rem;
+    padding: 6px 22px;
+    bottom: -28px;
+    left: -55px;                                     
+    color: white;
+    font-size: 17px;
+}
+.description:nth-child(2)::before{
+    content: '02';   
+}
+
+.description:nth-child(3)::before{
+    content: '03';   
+}
+
+
+#thirdContainer button{
+    margin-top: 20px;
+}
+
+#thirdContainer input{
+    display: none;
+}
+
+#thirdContainer{
+    padding-top: 100px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#thirdTitle{
+    color: #242d52;
+    font-size: 45px;
+}
+
+
+
+#feedBackContainer{
+    display: flex;
+    width: 100%;
+    padding-top: 110px;
+    /*justify-content: space-evenly;*/
+}
+
+.feedBack{
+    width: 40vw;
+    background-color: #fafafa;
+    text-align: center;
+    margin: 0 20px;
+    padding-bottom: 10px;
+}
+
+.feedBack img{
+    position: relative;
+    top: -30px;
+    width: 80px;
+    height: 80px;
+}
+
+.names{
+    color: #242d52;
+    font-size: 24px;
+
+}
+
+.feedBack p{
+    color: #9197ac;
+    padding: 10px 22px;
+}                      
+
+#secBackground{
+    position: absolute;
+    width: 600px;
+    height: 700px;
+    right: 280px;
+    z-index: -6;
+    margin-top: 70px;
+}
+
+@media screen and (max-width: 1000px){    
+    /*Add margin- bottom to the firstPart1 to keep the background photo*/
+   body{
+    font-family: 'Be Vietnam';
+    color: #242d52;
+    /*color: #242d52;*/
+    }
+
+    .container{
+        display: grid; 
+        grid-template-columns: auto;  
+    }           
+
+    #firstPart2{
+        width: 100%;
+        text-align: center;
+    }
+    
+    #firstPart2Title{    
+        color: #242d52; 
+        margin: 25px 0;
+        font-size: 40px;
+        width: 60%;
+        margin : 0 auto;
+        font-weight: bolder;
+    }
+    
+    #difference{
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 15px;
+        color: #9197ac;
+        line-height: 36px;
+        font-size: 20px;
+        margin-bottom: 80px;
+    }    
+
+    #secPart2{
+        width:100%;
+    }
+    
+    .description{
+        margin: 25px 20px;
+    }
+
+    .description h3{
+        margin: 25px 0 15px;
+        color: #242d52;
+       background-color: #fff0eb;
+        padding: 5px 0;
+    }
+    
+    .description p{
+        margin: 25px 0 60px;
+        width:100%;
+        color: #9197ac;
+        line-height: 35px;
+    }
+    
+    .description h3::before{
+        background-color: #ee6339;
+        content: '01';
+        position: relative;
+        border-radius: 2rem;
+        padding: 7.5px 24px;
+        left: -50px;
+        bottom: 1px;                                     
+        color: white;
+        font-size: 16px;
+    }
+    
+    .description:nth-child(2) h3::before{
+        content: '02';   
+    }
+    
+    .description:last-child h3::before{
+        content: '03';   
+    }
+            
+    #secBackground, #firstBackground{
+        display: none;
+    }
+
+    /*Third Container(the thirdPart from the page)*/
+    #thirdContainer{
+        text-align: center;  
+        padding-top: 100px;
+    }
+
+    #thirdTitle{
+        margin: 20px 0;
+        color: #242d52;
+        font-size: 45px;
+    } 
+
+    /*FeedBack start */   
+    #feedBackContainer{
+        padding-top: 110px; 
+        display: flex;
+        align-items: center;   
+    }
+    
+    .feedBack{
+        display: block;
+        background-color: #fafafa;
+        text-align: center;
+        margin:0 7.5vw;
+        padding-bottom: 10px;
+        width: 100%;
+        transition: 1.5s;  
+    }
+
+    .feedBack p{
+        padding-top: 15px;
+        width: 80vw;
+        line-height: 35px;
+    }
+    /*FeedBack end (from the thirdPartContainer)*/   
+
+    /*Manual buttons start*/     
+    #thirdContainer input{
+        display: none;
+    }
+
+    #feedBackBtns{   
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .manualBtn{
+        border: 3px solid #ee6339;
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 10px;
+        transition: 1s;
+        margin-right: 40px;
+    }
+    
+    .manualBtn:hover{
+        background: #ee6339;
+    }
+
+    #AnishasBtn:checked ~ .firstFeedBack{
+        margin-left: 0;
+    }
+    
+    #AlisBtn:checked ~ .firstFeedBack{
+        margin-left: -100%;
+    }
+    
+    #RichardsBtn:checked ~ .firstFeedBack{
+        margin-left: -200%;
+    }
+    /*Manual buttons end*/ 
+    /*Third Container end(the thirdPart from the page)*/
+
+}
+
+.manualBtn{
+    display: none;
+}
+       
+.startButton{
+    color:#ffffff;
+    background-color: #ee6339;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+
+.startButton:hover{
+    box-shadow: 0 0 15px 0 #ee6339;
+}
+
+#startButton3{
+    color: #ee6339;
+    background-color: #ffffff;
+    border: none;
+    padding: 18px 29px;
+    border-radius: 5rem;
+    cursor: pointer;
+    margin-top: 80px;
+    position: absolute;
+    right: 0;                                   
+}
+
+#firstFooter{
+/*background : url("https://manage-to.netlify.app/images/bg-tablet-pattern.svg");*/
+    background-color: #ee6339;
+   /* width:100%;*/
+    margin-top: 120px; 
+    color: #ffffff;
+    padding: 20px 7.5% 20px;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+
+#firstFooter img:nth-child(1){
+    width: 584px;                            
+    height: 600px;
+    opacity: 10%;
+    position: absolute;
+    top: -39px;
+    left: 76px;
+}
+
+#secPart3 + img{
+    width:600px;
+    height: 600px;
+    opacity: 10%;
+    position: absolute;
+    right: -381px;
+    bottom: 40px;
+
+}
+
+#firstFooter h1 {
+    line-height: 40px;
+    position: relative;
+    left: 0;
+}
+
+#firstPart3{
+    width: 50%;
+}
+
+#secPart3{
+    position: relative;
+    width: 40%;
+}
+
+#dots{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#dots2{
+    flex-direction: column;
+    display: flex;
+    gap:5px;
+}
+.dot {
+    height: 6px;
+    width: 6px;
+    background-color: #bbb;
+    border-radius: 50%;
+}
+                                  
+#allDots{
+      margin-top: 15px;
+      display: flex;
+      gap:5px;
+    }
+
+#secFooter{
+    width: 100%;
+    display: flex;
+    background-color: #23242e;
+    padding-bottom: 50px;
+}
+
+.logo{
+    gap:10px;
+    display: flex;
+    flex-direction:row ;
+}
+  
+  #menuFooter a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: small;
+    line-height:35px ;
+  }
+  
+  #menuFooter{
+      display: flex;
+      flex-direction: row;
+      gap:40px;
+      padding-left: 30px;
+      padding-top: 60px;
+  }
+  
+  #secFooter .logo{
+      padding-bottom: 100px;
+  }
+  
+  #firstPart4 {
+      padding-left:270px;
+      padding-top:40px ;
+      padding-right: 200px;
+  }
+  
+  #secFooter img {
+      width: 25px;
+      height: 25px;
+  }
+
+  #menuColumn1{
+   display: flex;
+   flex-direction: column;
+}
+
+#menuColumn2{
+    display: flex;
+    flex-direction: column;
+}
+
+#menuFooter a:hover{
+    color: #ee6339;      
+    }
+
+    #firstPart3{
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #firstPart3 h1{
+    font-size: 45px;
+    line-height:50px ;
+    }
+
+    label{
+        background-color: #ffffff;
+        padding: 10px 25px;
+        border-radius: 5rem;
+        cursor: pointer;
+        margin-top: 80px;
+           padding-top:90px;
+           padding-left: 150px;
+    }  
+    @media screen and (max-width: 767px){                                                         
+        .icon{
+         width: 35px;
+         height: 5px;
+         background-color: #242d52;
+         margin: 6px 0;
+        }
+        #navBar {
+         display: flex;
+         position: relative;
+        }
+         #icons{
+            position: absolute;
+            right: 0;
+          }
+        #firstPart{
+            width: 100%;
+            padding-left: 10%;
+            padding-bottom: 20%;
+        }
+        #secPart img{
+        padding-left: 10%;
+        }
+        
+        #Fcontainer{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        
+        
+        #firstFooter{
+            margin-top: 120px; 
+            height: 270px;
+            overflow: hidden;
+            padding-top: 50px;
+            flex-direction: column;
+            
+        }
+        
+        #copyright{
+            position: absolute;
+            top: 60px;
+        }
+        
+        #menuFooter{
+          padding-left: 35%;
+          gap:15%
+        }
+        #socialMedia{
+        flex-direction: row;
+        padding-bottom: 20px;
+        
+        }
+        .social{
+        padding-left: 20%;
+        }
+        #secFooter{
+            flex-direction: column-reverse;
+        }
+        #menuAndsec{
+            flex-direction: column-reverse;
+        } 
+        #firstPart4 .logo{
+        padding-left: 40%;
+        padding-top: 20px;
+        }
+        #firstPart4{
+            padding-left: 15%;
+            padding-right: 20%;
+            display: flex;
+            flex-direction: column-reverse;
+        
+        }
+        #secPart4 label{
+            padding-right: 20%;
+        }
+        
+        }   
